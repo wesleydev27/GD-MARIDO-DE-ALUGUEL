@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M8J3F6VB');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Serviço profissional de Marido de Aluguel para pequenos reparos e manutenção residencial.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="GD Serviços | Marido de Aluguel">
+    <meta property="og:description"
+        content="Serviço profissional de Marido de Aluguel para pequenos reparos e manutenção residencial.">
+    <meta property="og:image" content="img/logo/favicon.webp">
+    <meta property="og:url" content="https://www.gdmaridodealuguel.com.br">
+    <meta property="og:type" content="website">
+    <!-- Meta Tags para iOS e Android -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ff5d00">
+
+    <link rel="shortcut icon" href="img/logo/favicon.webp" type="image/x-icon">
+    <title>GD Serviços | Marido de Aluguel</title>
+    <script src="https://cdn.tailwindcss.com" async></script>
+    <!--Lazy Load-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" defer></script>
+    <!-- CSS -->
+    <style>
+        :root {
+            --primary: #ff5d00;
+            --secondary: #002e80;
+            --secondary-hover: #002f80e8;
+            --background: #f7f7f7;
+            --white: #FFF;
+            --black: #000;
+            --green-whatsapp: #25D366;
+            --green-hover: #25d365d2;
+        }
+
+        a:focus,
+        button:focus {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+
+        /*ANIMAÇÃO MENU MOBILE*/
+        #menu {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            pointer-events: none;
+            /* Impede clique quando invisível */
+        }
+
+        #menu.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        /*OVERLAY BANNER 1*/
+        #banner1 {
+            background: url('img/photos/1619475886_1-phonote.webp') no-repeat center center/cover;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        /*SUAVIDADE DE ROLAGEM*/
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /*ANIMAÇÃO PULSO NOS BOTÕES*/
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+                /* Aumenta o tamanho do botão */
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Aplicar animação no hover */
+        a:hover {
+            animation: pulse 1s infinite;
+            /* Aplica o efeito de pulso infinito ao passar o mouse */
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--background)]">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M8J3F6VB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--HEADER-->
+    <header
+        class="bg-[var(--secondary)] text-[var(--white)] p-3 fixed top-0 left-0 right-0 w-full z-50 shadow-md font-medium ">
+        <div class="container max-w-7xl mx-auto flex justify-between items-center">
+            <h1><a href="https://gdmaridodealuguel.com.br"><img src="img/logo/favicon.webp" alt="Logo GD Serviços"
+                        class="w-12 md:w-16"></a>
+                <span class="sr-only">GD Serviços - Marido de Aluguel</span>
+            </h1>
+            <nav class="hidden md:block">
+                <ul class="flex items-center gap-4">
+                    <li><a href="#servicos" class="hover:text-[var(--primary)]">Reparos</a></li>
+                    <li><a href="#servicos" class="hover:text-[var(--primary)]">Elétrica</a></li>
+                    <li><a href="#servicos" class="hover:text-[var(--primary)]">Hidráulica</a></li>
+                    <li><a href="#servicos" class="hover:text-[var(--primary)]">Alvenaria</a></li>
+
+                    <!-- Orçamento via WhatsApp desktop -->
+                    <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                        target="_blank" rel="noopener noreferrer" class="flex items-center mx-auto bg-[var(--green-whatsapp)] text-[var(--white)] 
+                    hover:bg-[var(--green-hover)] px-6 py-2 rounded-md transition-all duration-300 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor" class="mr-2">
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+                        </svg>
+                        Solicitar orçamento
+                    </a>
+                </ul>
+            </nav>
+
+            <!--Menu Mobile-->
+            <div class="md:hidden flex items-center gap-10 justify-center" aria-label="Abrir menu">
+                <!-- Orçamento via WhatsApp mobile -->
+                <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                    target="_blank" rel="noopener noreferrer"
+                    class="flex items-center mx-auto bg-[var(--green-whatsapp)] text-[var(--white)] hover:bg-[var(--green-hover)] px-6 py-2 rounded-md transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" class="mr-2">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+                    </svg>
+                    Solicitar orçamento
+                </a>
+                <button class="bg-[var(--primary)] text-[var(--white)] p-2 rounded" id="menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm0 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1zm0 6a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1z" />
+                    </svg>
+                </button>
+                <div id="menu" class="absolute top-16 right-0 w-full bg-[var(--secondary)] text-[var(--white)]">
+                    <ul class="flex flex-col text-center p-12 gap-4">
+                        <li><a href="#servicos" class="hover:text-[var(--primary)]">Reparos</a></li>
+                        <li><a href="#servicos" class="hover:text-[var(--primary)]">Elétrica</a></li>
+                        <li><a href="#servicos" class="hover:text-[var(--primary)]">Hidráulica</a></li>
+                        <li><a href="#servicos" class="hover:text-[var(--primary)]">Alvenaria</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <section class="relative w-full text-white flex flex-col md:flex-row p-6 md:p-20 mt-12 items-center justify-center"
+        id="banner1">
+        <!-- Fundo com opacidade -->
+        <div class="absolute top-0 left-0 w-full h-full"></div>
+
+        <!-- Conteúdo -->
+        <div class="relative z-10 text-center md:text-left md:w-1/2">
+            <h2 class="text-3xl md:text-5xl font-bold pt-8 mb-4">Não deixe os problemas <br>da sua casa se acumularem
+            </h2>
+            <p class="text-lg md:text-xl mb-2">Chame o <span class="font-bold">Marido de Aluguel</span></p>
+
+            <!-- Botão LIGAR AGORA -->
+            <a href="tel:19996507845"
+                class="flex items-center justify-center w-80 bg-[var(--primary)] text-[var(--white)] font-medium p-4 rounded-full text-center mt-4 hover:bg-[var(--secondary-hover)] border-2 border-[var(--white)] transition-all duration-300"
+                style="transition: all 0.3s;">
+                <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    stroke="#fff" class="mr-3">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z"
+                            stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+                    </g>
+                </svg>
+                LIGAR AGORA
+            </a>
+        </div>
+
+        <!-- Imagem -->
+        <div class="md:w-1/4 mt-6 md:mt-0 flex justify-center relative z-10">
+            <img src="img/photos/Sem Título-3.webp" alt="Marido de Aluguel" class="w-full md:w-auto max-w-full">
+        </div>
+
+    </section>
+
+    <!--SERVIÇOS-->
+    <section class="container max-w-7xl mx-auto flex flex-col justify-between items-center">
+        <!--TITULO VEJA NOSSOS SERVIÇOS-->
+        <h2 class=" lg:text-5xl  md:text-4xl text-3xl text-center p-8 mb-4 font-medium text-[var(--secondary)] ">
+            Conheça nossas serviços!
+        </h2>
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-3">
+            <!--Instalações em geral-->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col h-full" id="instalacao">
+                <img src="img/servicos/Instalacao em geral.webp" alt="Instalação de ar condicionado"
+                    class="w-full rounded-lg object-cover h-48">
+                <h3 class="text-2xl font-semibold mb-2 mt-4 flex-grow">Instalações em geral</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Realizamos serviços de elétrica e hidráulica, instalação de
+                    máquinas de lavar, purificadores de água, suportes e prateleiras, espelhos, cortinas, persianas e
+                    muito mais, sempre com qualidade e segurança.</p>
+
+                <!--BOTÃO WHATSAPP-->
+                <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                    target="_blank" rel="noopener noreferrer" class="flex items-center mx-auto bg-[var(--green-whatsapp)] text-[var(--white)] 
+                 hover:bg-[var(--green-hover)] px-6 py-2 rounded-md transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" class="mr-2">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+                    </svg>
+                    Solicitar orçamento
+                </a>
+            </div>
+
+            <!--Serviços elétricos-->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col h-full" id="manutencao">
+                <img src="img/servicos/servicos eletricos.webp" alt="Manutenção de ar condicionado"
+                    class="w-full rounded-lg object-cover h-48">
+                <h3 class="text-2xl font-semibold mb-2 mt-4 flex-grow">Serviços elétricos</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Executamos serviços elétricos completos, incluindo instalação,
+                    substituição de tomadas, fiação, disjuntores, chuveiros e muito mais, garantindo segurança e
+                    eficiência.</p>
+
+                <!--BOTÃO WHATSAPP-->
+                <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                    target="_blank" rel="noopener noreferrer" class="flex items-center mx-auto bg-[var(--green-whatsapp)] text-[var(--white)] 
+                hover:bg-[var(--green-hover)] px-6 py-2 rounded-md transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" class="mr-2">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+                    </svg>
+                    Solicitar orçamento
+                </a>
+            </div>
+
+            <!--Encanador e desentupidor-->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col h-full" id="higienizacao">
+                <img src="img/servicos/encanador.webp" alt="Higienização de ar condicionado"
+                    class="w-full rounded-lg object-cover h-48">
+                <h3 class="text-2xl font-semibold mb-2 mt-4 flex-grow">Encanador e desentupidor</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Realizamos reparos em vazamentos, infiltrações, canos
+                    danificados, além de instalações hidráulicas e muito mais, com qualidade e segurança.</p>
+
+                <!--BOTÃO WHATSAPP-->
+                <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                    target="_blank" rel="noopener noreferrer" class="flex items-center mx-auto bg-[var(--green-whatsapp)] text-[var(--white)] 
+                 hover:bg-[var(--green-hover)] px-6 py-2 rounded-md transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" class="mr-2">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+                    </svg>
+                    Solicitar orçamento
+                </a>
+            </div>
+
+            <!--Reformas-->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col h-full" id="infraestrutura">
+                <img src="img/servicos/reformas.webp" alt="Infraestrutura de ar condicionado"
+                    class="w-full rounded-lg object-cover h-48">
+                <h3 class="text-2xl font-semibold mb-2 mt-4 flex-grow">Reformas</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Executamos serviços de pintura, manutenção, reparos e reformas
+                    completas para renovar seu espaço.</p>
+
+                <!--BOTÃO WHATSAPP-->
+                <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                    target="_blank" rel="noopener noreferrer" class="flex items-center mx-auto bg-[var(--green-whatsapp)] text-[var(--white)] 
+                hover:bg-[var(--green-hover)] px-6 py-2 rounded-md transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" class="mr-2">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+                    </svg>
+                    Solicitar orçamento
+                </a>
+            </div>
+
+            <!--Montagem de móveis-->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col h-full" id="infraestrutura">
+                <img src="img/servicos/montagem de moveis.webp" alt="Infraestrutura de ar condicionado"
+                    class="w-full rounded-lg object-cover h-48">
+                <h3 class="text-2xl font-semibold mb-2 mt-4 flex-grow">Montagem de móveis</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Montamos diversos tipos de móveis, incluindo guarda-roupas,
+                    armários, camas e muito mais.</p>
+
+                <!--BOTÃO WHATSAPP-->
+                <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                    target="_blank" rel="noopener noreferrer" class="flex items-center mx-auto bg-[var(--green-whatsapp)] text-[var(--white)] 
+                hover:bg-[var(--green-hover)] px-6 py-2 rounded-md transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" class="mr-2">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+                    </svg>
+                    Solicitar orçamento
+                </a>
+            </div>
+
+            <!--Outros Serviços-->
+            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col h-full" id="infraestrutura">
+                <img src="img/servicos/outro serviços.webp" alt="Infraestrutura de ar condicionado"
+                    class="w-full rounded-lg object-cover h-48">
+                <h3 class="text-2xl font-semibold mb-2 mt-4 flex-grow">Outros Serviços</h3>
+                <p class="text-gray-600 mb-4 flex-grow">Descubra todos os serviços que disponibilizamos para você.</p>
+
+                <!--BOTÃO VER MAIS SERVIÇOS-->
+                <a href="#servicos" class="flex items-center mx-auto bg-[var(--primary)] text-[var(--white)] 
+               hover:bg-[var(--secondary-hover)] px-6 py-2 rounded-md transition-all duration-300">
+                    Ver todos os serviços
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Button contratar um especialista -->
+        <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+            target="_blank" rel="noopener noreferrer"
+            class="flex items-center justify-center w-80 bg-[var(--primary)] text-[var(--white)] font-medium p-4 rounded-full text-center m-12 hover:bg-[var(--secondary-hover)] transition-all duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                class="mr-3">
+                <path
+                    d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+            </svg>
+            Contrate um especialista
+        </a>
+
+
+    </section>
+
+    <!--SEÇÃO DEGRADE-->
+    <section class="px-6 py-12 bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl md:text-4xl font-bold mb-6">Oferecemos serviços completos de instalação e manutenção
+                residencial, sempre com agilidade e alta performance.</h2>
+            <p class="text-base md:text-lg leading-relaxed">Nosso compromisso é proporcionar um atendimento eficiente,
+                garantindo que você e sua família aproveitem a tranquilidade do dia a dia sem preocupações.</p>
+        </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section class="px-6 py-12 bg-[var(--white)] text-gray-800">
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+
+            <!-- Título GD Marido de Aluguel -->
+            <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+                <h1 class="text-4xl font-bold text-[var(--secondary)] relative inline-block">
+                    GD Marido de Aluguel
+                    <span
+                        class="absolute left-1/2 md:left-0 top-full w-24 h-2 bg-[var(--primary)] mt-2 transform -translate-x-1/2 md:translate-x-0"></span>
+                </h1>
+                <h2 class="text-3xl font-bold mt-6">Quem Somos</h2>
+                <p class="text-lg mt-4">
+                    Nossa jornada começou em <strong>xxx</strong> com o objetivo de oferecer soluções práticas e
+                    eficientes para lares e empresas. Com o passar dos anos, nos tornamos referência no setor,
+                    proporcionando serviços de qualidade e confiança.
+                </p>
+            </div>
+
+            <!-- Texto e Diferenciais -->
+            <div class="w-full md:w-1/2">
+                <h3 class="text-2xl font-semibold mb-4 text-center md:text-left">Nossos Diferenciais</h3>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-lg text-[var(--secondary)]">
+                    <li>✅ Atendimento personalizado</li>
+                    <li>✅ Profissionais qualificados</li>
+                    <li>✅ +X anos de experiência</li>
+                    <li>✅ Qualidade e segurança garantidas</li>
+                    <li>✅ Garantia total de satisfação</li>
+                    <li>✅ Atendimento rápido e eficiente</li>
+
+                    <!-- Button contratar um especialista -->
+                    <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                        target="_blank" rel="noopener noreferrer"
+                        class="flex items-center justify-center w-80 bg-[var(--primary)] text-[var(--white)] font-medium p-4 rounded-full text-center mt-4 hover:bg-[var(--secondary-hover)] transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor" class="mr-3">
+                            <path
+                                d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+                        </svg>
+                        Contrate um especialista
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LISTA DE SERVIÇOS -->
+    <section class="bg-gray-100 py-12" id="servicos">
+        <div class="container mx-auto px-6">
+            <!-- Título -->
+            <h2 class="text-3xl font-bold text-center text-[var(--secondary)] mb-8">
+                Conheça Nossas Soluções para Sua Residência
+            </h2>
+
+            <!-- Lista de Serviços -->
+            <div class="flex flex-col md:flex-row container max-w-7xl mx-auto flex justify-between items-center">
+                <ul class="w-full md:w-1/2 space-y-2 text-[var(--secondary)]">
+                    <li>✅ Instalações e reparos elétricos</li>
+                    <li>✅ Instalações e reparos hidráulicos</li>
+                    <li>✅ Reformas residenciais e prediais</li>
+                    <li>✅ Serviço de pintura</li>
+                    <li>✅ Instalação e troca de chuveiro</li>
+                    <li>✅ Instalação e troca de fechaduras e portas</li>
+                    <li>✅ Instalação de torneira</li>
+                    <li>✅ Instalação de cortinas e persianas</li>
+                    <li>✅ Instalação de varal</li>
+                    <li>✅ Montagem e desmontagem de móveis</li>
+                    <li>✅ Instalação de rede de proteção</li>
+                    <li>✅ Instalação de TV e eletrodomésticos</li>
+                    <li>✅ Pequenos consertos</li>
+                    <li>✅ Instalação de itens de banheiro e cozinha</li>
+                </ul>
+
+                <ul class="w-full md:w-1/2 space-y-2 text-[var(--secondary)]">
+                    <li>✅ Serviços de marcenaria</li>
+                    <li>✅ Limpeza de caixa d’água</li>
+                    <li>✅ Desentupimento de vaso sanitário</li>
+                    <li>✅ Limpeza e higienização de estofados e tapetes</li>
+                    <li>✅ Instalação e reparos de gesso</li>
+                    <li>✅ Instalação de quadros e itens decorativos</li>
+                    <li>✅ Drywall</li>
+                    <li>✅ Serviços de empreiteiro</li>
+                    <li>✅ Instalação de pisos e azulejos</li>
+                    <li>✅ Instalação de ventilador</li>
+                    <li>✅ Impermeabilização</li>
+                    <li>✅ Serviços de marmoraria</li>
+                    <li>✅ Instalação e reparos em telhados</li>
+                    <li>✅ Bombeiro hidráulico</li>
+                </ul>
+            </div>
+
+            <!-- Botões -->
+            <div class="flex flex-col md:flex-row justify-center gap-4 mt-10">
+                <!-- Button contratar um especialista -->
+                <a href="https://wa.me/5519996507845?text=Ol%C3%A1%20eu%20vim%20do%20seu%20site%20e%20gostaria%20de%20um%20or%C3%A7amento!"
+                    target="_blank" rel="noopener noreferrer"
+                    class="flex items-center justify-center w- bg-[var(--primary)] text-[var(--white)] font-medium p-4 rounded-full text-center mt-4 hover:bg-[var(--secondary-hover)] transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="currentColor" class="mr-3">
+                        <path
+                            d="M12 0C5.373 0 0 5.373 0 12c0 2.088.547 4.059 1.584 5.799L.049 24l6.354-1.501A11.959 11.959 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.092a9.978 9.978 0 0 1-5.078-1.373l-.364-.216-3.773.89.829-3.507-.24-.388A9.939 9.939 0 0 1 2 12c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10zm5.506-7.425c-.291-.146-1.723-.854-1.99-.949-.266-.098-.462-.146-.657.146-.196.292-.754.949-.925 1.146-.17.195-.34.22-.63.073-1.715-.854-2.845-1.524-3.986-3.437-.3-.512.3-.476.854-1.586.095-.195.048-.365-.025-.511-.073-.146-.657-1.59-.899-2.185-.237-.57-.479-.49-.657-.499-.172-.008-.37-.01-.568-.01a1.105 1.105 0 0 0-.803.366c-.267.292-1.014.993-1.014 2.419s1.038 2.805 1.182 2.998c.146.195 2.036 3.108 4.937 4.355.689.298 1.226.475 1.646.608.692.22 1.32.189 1.816.114.554-.082 1.723-.704 1.967-1.385.243-.682.243-1.267.17-1.385-.073-.122-.267-.195-.558-.34z" />
+                    </svg>
+                    CONTRATAR UM ESPECIALISTA
+                </a>
+                <!-- Botão LIGAR AGORA -->
+                <a href="tel:19996507845"
+                    class="flex items-center justify-center w- bg-[var(--primary)] text-[var(--white)] font-medium p-4 rounded-full text-center mt-4 hover:bg-[var(--secondary-hover)] transition-all duration-300">
+                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        stroke="#fff" class="mr-3">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z"
+                                stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+                        </g>
+                    </svg>
+                    LIGAR AGORA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--BOTÃO VOLTA PARA O TOPO-->
+    <button id="back-to-top-btn" aria-label="Voltar ao topo"
+        class="fixed bottom-4 left-4 p-3 z-50 bg-[var(--primary)] text-white rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[var(--secondary-hover)] border-2 border-[var(--white)]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M12 4l-8 8h6v8h4v-8h6z" />
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--secondary)] text-[var(--white)] text-center py-4">
+        <p>&copy; 2025 GD Serviços - Marido de aluguel Todos os direitos reservados</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+    <script src="js/slider.js" defer></script>
+
+</body>
+
+</html>
