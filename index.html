@@ -33,8 +33,7 @@
     <link rel="shortcut icon" href="img/logo/favicon.webp" type="image/x-icon">
     <title>GD Serviços | Marido de Aluguel</title>
     <script src="https://cdn.tailwindcss.com" async></script>
-    <!--Lazy Load-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" defer></script>
+
     <!-- CSS -->
     <style>
         :root {
@@ -46,12 +45,14 @@
             --black: #000;
             --green-whatsapp: #25D366;
             --green-hover: #25d365d2;
+            font-display: swap;
         }
 
         a:focus,
         button:focus {
             outline: 2px solid var(--primary);
             outline-offset: 2px;
+            font-display: swap;
         }
 
 
@@ -61,13 +62,14 @@
             transform: translateX(-20px);
             transition: opacity 0.3s ease, transform 0.3s ease;
             pointer-events: none;
-            /* Impede clique quando invisível */
+            font-display: swap;
         }
 
         #menu.show {
             opacity: 1;
             transform: translateY(0);
             pointer-events: auto;
+            font-display: swap;
         }
 
         /*OVERLAY BANNER 1*/
@@ -75,11 +77,13 @@
             background: url('img/photos/1619475886_1-phonote.webp') no-repeat center center/cover;
             background-attachment: fixed;
             background-size: cover;
+            font-display: swap;
         }
 
         /*SUAVIDADE DE ROLAGEM*/
         html {
             scroll-behavior: smooth;
+            font-display: swap;
         }
 
         /*ANIMAÇÃO PULSO NOS BOTÕES*/
@@ -101,7 +105,7 @@
         /* Aplicar animação no hover */
         a:hover {
             animation: pulse 1s infinite;
-            /* Aplica o efeito de pulso infinito ao passar o mouse */
+            font-display: swap;
         }
     </style>
 </head>
